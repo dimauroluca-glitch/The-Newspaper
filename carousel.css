@@ -1,28 +1,28 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+/* Padding per il footer e allineamento del testo */
 
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: rgb(var(--bs-tertiary-color-rgb));
+  color: rgb(var(--bs-body-color-rgb));
 }
 
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
+/* Classe base del carosello */
 .carousel {
   margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
+/* Poiché usiamo immagini di sfondo, dichiariamo l'altezza */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
+/* Dichiarazione altezze per le immagini */
 .carousel-item {
   height: 32rem;
 }
@@ -31,31 +31,36 @@ body {
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel */
+/* Allinea il testo delle tre colonne sotto il carosello */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+/* Spaziature tra i titoli */
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
 
 
-/* Featurettes
-------------------------- */
+/* FEATURETTES
+-------------------------------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0; /* Spaziatura tra le sezioni */
 }
 
-/* Thin out the marketing headings */
+/* Sfoltisce i titoli delle featurette */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
 @media (min-width: 40em) {
-  /* Bump up size of carousel content */
+  /* Ingrandisce il testo del carosello su schermi grandi */
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
