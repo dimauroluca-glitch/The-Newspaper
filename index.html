@@ -5,7 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The_Newspaper</title>
-  <script src="color-modes.js"></script>
+    <!-- Codice ufficiale Bootstrap incorporato per evitare errori di caricamento su Render -->
+  <script>
+    (() => {
+      'use strict'
+      const getStoredTheme = () => localStorage.getItem('theme')
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme()
+        if (storedTheme) {
+          return storedTheme
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+      const setTheme = theme => {
+        if (theme === 'auto') {
+          document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', theme)
+        }
+      }
+      setTheme(getPreferredTheme())
+    })()
+  </script>
+
   <link href="bootstrap.min.css" rel="stylesheet">
   <link href="carousel.css" rel="stylesheet">
   <meta name="description" content="">
