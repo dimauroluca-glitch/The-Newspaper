@@ -1,77 +1,43 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding per il footer e allineamento del testo */
-
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: rgb(var(--bs-body-color-rgb));
 }
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Classe base del carosello */
 .carousel {
   margin-bottom: 4rem;
 }
-/* Poiché usiamo immagini di sfondo, dichiariamo l'altezza */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
-
-/* Dichiarazione altezze per le immagini */
 .carousel-item {
   height: 32rem;
+  background-color: #777;
 }
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Allinea il testo delle tre colonne sotto il carosello */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-/* Spaziature tra i titoli */
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-
-
-/* FEATURETTES
--------------------------------------------------- */
-
 .featurette-divider {
-  margin: 5rem 0; /* Spaziatura tra le sezioni */
+  margin: 5rem 0;
 }
-
-/* Sfoltisce i titoli delle featurette */
 .featurette-heading {
   letter-spacing: -.05rem;
 }
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
 @media (min-width: 40em) {
-  /* Ingrandisce il testo del carosello su schermi grandi */
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
   .featurette-heading {
     font-size: 50px;
   }
 }
-
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
